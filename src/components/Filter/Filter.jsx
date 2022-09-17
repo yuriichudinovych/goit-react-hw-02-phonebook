@@ -1,17 +1,19 @@
 import PropTypes from 'prop-types';
 
+import { StyledFilter } from './Filter.styled';
+
 const Filter = ({ filter, handleChange }) => {
   return (
     <>
-      <h3>Find contacts by name</h3>
-      <label htmlFor="">
+      <StyledFilter htmlFor="">
+        Find contacts by name
         <input
           type="text"
           name="filter"
           value={filter}
           onChange={handleChange}
         />
-      </label>
+      </StyledFilter>
     </>
   );
 };
