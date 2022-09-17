@@ -8,7 +8,9 @@ export const Container = styled.div`
   width: 250px;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  text-align: center;
+`;
 
 export const SecondTitle = styled.h2`
   text-align: center;
