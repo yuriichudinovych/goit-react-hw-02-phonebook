@@ -75,12 +75,10 @@ export class App extends Component {
         <SecondTitle>Contacts</SecondTitle>
         {this.state.contacts.length > 0 ? (
           <>
-            {this.state.contacts.length > 1 && (
-              <Filter
-                filter={this.state.filter}
-                handleChange={this.handleChange}
-              />
-            )}
+            <Filter
+              filter={this.state.filter}
+              handleChange={this.handleChange}
+            />
 
             <ContactList
               contacts={this.getFilteredContacts()}
